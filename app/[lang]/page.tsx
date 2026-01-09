@@ -11,19 +11,32 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 export default function Home() {
   const { t, loading, lang } = useTranslations()
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
+  const [isMobile, setIsMobile] = useState(false)
 
-  // Auto-play carrousel (avanza de 3 en 3)
+  // Detectar si es móvil
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
+
+  // Auto-play carrousel (avanza de 1 en 1 en móvil, de 3 en 3 en desktop)
   useEffect(() => {
     if (!t?.testimonials?.reviews || t?.testimonials?.reviews?.length === 0) return
     const timer = setInterval(() => {
       setCurrentTestimonial((prev) => {
         const totalReviews = t?.testimonials?.reviews?.length || 1
-        const maxIndex = Math.max(0, totalReviews - 3)
-        return prev >= maxIndex ? 0 : Math.min(maxIndex, prev + 3)
+        const step = isMobile ? 1 : 3
+        const maxIndex = isMobile ? totalReviews - 1 : Math.max(0, totalReviews - 3)
+        return prev >= maxIndex ? 0 : Math.min(maxIndex, prev + step)
       })
     }, 5000) // Cambia cada 5 segundos
     return () => clearInterval(timer)
-  }, [t?.testimonials?.reviews])
+  }, [t?.testimonials?.reviews, isMobile])
 
   if (loading || !t) {
     return (
@@ -263,15 +276,19 @@ export default function Home() {
             </div>
 
             {/* Carrousel Container */}
-            <div className="relative px-16">
+            <div className="relative px-4 md:px-16">
               <div className="overflow-hidden py-4">
                 <div 
                   className="flex transition-transform duration-500 ease-in-out"
-                  style={{ transform: `translateX(-${currentTestimonial * (100 / 3)}%)` }}
+                  style={{ 
+                    transform: isMobile 
+                      ? `translateX(-${currentTestimonial * 100}%)` 
+                      : `translateX(-${currentTestimonial * (100 / 3)}%)` 
+                  }}
                 >
                   {t?.testimonials?.reviews?.map((review: any, index: number) => (
-                    <div key={index} className="w-1/3 flex-shrink-0 px-3">
-                      <div className="bg-white rounded-2xl p-8 h-full border border-gray-200">
+                    <div key={index} className="w-full md:w-1/3 flex-shrink-0 px-3">
+                      <div className="bg-white rounded-2xl p-6 md:p-8 h-full border border-gray-200 shadow-lg">
                         <div className="flex items-center mb-6">
                           <div className="w-14 h-14 bg-gradient-to-br from-[#FF852A] to-[#cc6a22] rounded-full flex items-center justify-center text-white font-bold text-lg">
                             {review.initials}
@@ -294,40 +311,59 @@ export default function Home() {
               <button
                 onClick={() => {
                   const totalReviews = t?.testimonials?.reviews?.length || 1
-                  const maxIndex = Math.max(0, totalReviews - 3)
-                  setCurrentTestimonial((prev) => (prev === 0 ? maxIndex : Math.max(0, prev - 3)))
+                  const step = isMobile ? 1 : 3
+                  const maxIndex = isMobile ? totalReviews - 1 : Math.max(0, totalReviews - 3)
+                  setCurrentTestimonial((prev) => (prev === 0 ? maxIndex : Math.max(0, prev - step)))
                 }}
-                className="absolute left-0 top-1/2 -translate-y-1/2 bg-white hover:bg-[#FF852A] text-gray-800 hover:text-white p-4 rounded-full shadow-lg transition-all duration-300 z-10"
+                className="absolute left-0 md:left-0 top-1/2 -translate-y-1/2 bg-white hover:bg-[#FF852A] text-gray-800 hover:text-white p-3 md:p-4 rounded-full shadow-lg transition-all duration-300 z-10"
                 aria-label="Anterior"
               >
-                <FaChevronLeft className="text-xl" />
+                <FaChevronLeft className="text-lg md:text-xl" />
               </button>
               <button
                 onClick={() => {
                   const totalReviews = t?.testimonials?.reviews?.length || 1
-                  const maxIndex = Math.max(0, totalReviews - 3)
-                  setCurrentTestimonial((prev) => (prev >= maxIndex ? 0 : Math.min(maxIndex, prev + 3)))
+                  const step = isMobile ? 1 : 3
+                  const maxIndex = isMobile ? totalReviews - 1 : Math.max(0, totalReviews - 3)
+                  setCurrentTestimonial((prev) => (prev >= maxIndex ? 0 : Math.min(maxIndex, prev + step)))
                 }}
-                className="absolute right-0 top-1/2 -translate-y-1/2 bg-white hover:bg-[#FF852A] text-gray-800 hover:text-white p-4 rounded-full shadow-lg transition-all duration-300 z-10"
+                className="absolute right-0 md:right-0 top-1/2 -translate-y-1/2 bg-white hover:bg-[#FF852A] text-gray-800 hover:text-white p-3 md:p-4 rounded-full shadow-lg transition-all duration-300 z-10"
                 aria-label="Siguiente"
               >
-                <FaChevronRight className="text-xl" />
+                <FaChevronRight className="text-lg md:text-xl" />
               </button>
 
               {/* Dots Indicator */}
               <div className="flex justify-center gap-2 mt-8">
-                {Array.from({ length: Math.ceil((t?.testimonials?.reviews?.length || 0) / 3) }).map((_, groupIndex) => (
-                  <button
-                    key={groupIndex}
-                    onClick={() => setCurrentTestimonial(groupIndex * 3)}
-                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                      Math.floor(currentTestimonial / 3) === groupIndex
-                        ? 'bg-[#FF852A] w-8' 
-                        : 'bg-gray-300 hover:bg-gray-400'
-                    }`}
-                    aria-label={`Ir a grupo ${groupIndex + 1}`}
-                  />
-                ))}
+                {isMobile ? (
+                  // Móvil: un dot por cada reseña
+                  t?.testimonials?.reviews?.map((_: any, index: number) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentTestimonial(index)}
+                      className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                        currentTestimonial === index
+                          ? 'bg-[#FF852A] w-8' 
+                          : 'bg-gray-300 hover:bg-gray-400'
+                      }`}
+                      aria-label={`Ir a reseña ${index + 1}`}
+                    />
+                  ))
+                ) : (
+                  // Desktop: un dot por cada grupo de 3
+                  Array.from({ length: Math.ceil((t?.testimonials?.reviews?.length || 0) / 3) }).map((_, groupIndex) => (
+                    <button
+                      key={groupIndex}
+                      onClick={() => setCurrentTestimonial(groupIndex * 3)}
+                      className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                        Math.floor(currentTestimonial / 3) === groupIndex
+                          ? 'bg-[#FF852A] w-8' 
+                          : 'bg-gray-300 hover:bg-gray-400'
+                      }`}
+                      aria-label={`Ir a grupo ${groupIndex + 1}`}
+                    />
+                  ))
+                )}
               </div>
             </div>
           </div>
