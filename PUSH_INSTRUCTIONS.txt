@@ -1,0 +1,98 @@
+═══════════════════════════════════════════════════════════════
+   🚀 INSTRUCCIONES PARA HACER PUSH Y DEPLOY
+═══════════════════════════════════════════════════════════════
+
+📦 COMMITS LISTOS PARA SUBIR (3):
+  2dc787a - Arreglar duplicación de interfaz PasswordReset
+  5a75c3a - Migrar a base de datos PostgreSQL (Railway)
+  3a3f24a - Implementar base de datos PostgreSQL persistente
+
+═══════════════════════════════════════════════════════════════
+
+📋 PASO 1: HACER PUSH A GITHUB
+─────────────────────────────────────────────────────────────
+
+OPCIÓN A - GitHub Desktop (MÁS FÁCIL):
+  1. Abre GitHub Desktop
+  2. Verás los commits pendientes
+  3. Click en "Push origin" (botón azul arriba a la derecha)
+  ✅ ¡Listo!
+
+OPCIÓN B - Terminal:
+  cd "/Users/guti/Desktop/CURSOR WEBS/IQLEVEL"
+  git push origin main
+
+  Si te pide credenciales:
+  - Username: Aguti1902
+  - Password: [Tu GitHub Personal Access Token]
+
+═══════════════════════════════════════════════════════════════
+
+📋 PASO 2: EJECUTAR MIGRACIÓN EN RAILWAY (IMPORTANTE)
+─────────────────────────────────────────────────────────────
+
+  1. Ve a https://railway.app/
+  2. Click en tu proyecto "Postgres-Zleq"
+  3. Click en la pestaña "Data" o "Query"
+  4. Abre el archivo: railway-migration.sql
+  5. Copia TODO el contenido del archivo
+  6. Pégalo en el Query Editor de Railway
+  7. Click en "Execute" o "Run"
+  8. Verifica que no haya errores
+
+  ⚠️ ESTE PASO ES CRÍTICO - Sin esto, la app no funcionará
+
+═══════════════════════════════════════════════════════════════
+
+📋 PASO 3: VERIFICAR DEPLOY EN VERCEL
+─────────────────────────────────────────────────────────────
+
+  1. Ve a https://vercel.com/dashboard
+  2. Click en tu proyecto "MindMetric"
+  3. Verás el deploy automático iniciándose
+  4. Espera 2-3 minutos
+  5. Verifica que el deploy sea exitoso ✅
+
+═══════════════════════════════════════════════════════════════
+
+📋 PASO 4: PROBAR QUE TODO FUNCIONA
+─────────────────────────────────────────────────────────────
+
+  1. Ve a https://www.mindmetric.io/es/test
+  2. Completa un test
+  3. Haz el pago de 0.50€
+  4. Revisa tu email y copia las credenciales
+  5. Ve a https://www.mindmetric.io/es/cuenta
+  6. Haz login con las credenciales del email
+  7. ✅ Deberías ver tu resultado del test
+  8. ✅ Recarga la página - los datos deben seguir ahí
+
+═══════════════════════════════════════════════════════════════
+
+🎯 ¿QUÉ SE ARREGLÓ?
+
+  ✅ Base de datos persistente (Railway PostgreSQL)
+  ✅ Los datos NO se borran en cada deploy
+  ✅ Login funciona correctamente
+  ✅ Tests se guardan en el dashboard
+  ✅ Cancelaciones funcionan
+
+═══════════════════════════════════════════════════════════════
+
+📄 ARCHIVOS IMPORTANTES:
+
+  - DEPLOYMENT_RAILWAY.md → Guía completa del deploy
+  - railway-migration.sql → Script de migración (EJECUTAR EN RAILWAY)
+  - lib/database-postgres.ts → Nueva implementación de base de datos
+
+═══════════════════════════════════════════════════════════════
+
+¿NECESITAS AYUDA?
+
+  Si algo falla:
+  1. Revisa los logs en Vercel → Logs
+  2. Revisa los logs en Railway
+  3. Verifica que DATABASE_URL esté en Vercel
+
+═══════════════════════════════════════════════════════════════
+

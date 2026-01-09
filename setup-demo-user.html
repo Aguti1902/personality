@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurar Usuario Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #07C59A;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 5px;
+        }
+        
+        .info-box h3 {
+            color: #07C59A;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .credentials {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin-top: 10px;
+        }
+        
+        .credentials div {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        
+        .credentials strong {
+            color: #333;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #07C59A 0%, #06b894 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(7, 197, 154, 0.3);
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: none;
+        }
+        
+        .success.show {
+            display: block;
+        }
+        
+        .link {
+            color: #07C59A;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .link:hover {
+            text-decoration: underline;
+        }
+        
+        .steps {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff3cd;
+            border-radius: 5px;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .steps h4 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .steps ol {
+            margin-left: 20px;
+            color: #856404;
+        }
+        
+        .steps li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Configurar Usuario Demo</h1>
+        <p class="subtitle">Configura un usuario de demostración para acceder al dashboard</p>
+        
+        <div class="info-box">
+            <h3>📋 Credenciales del Usuario Demo</h3>
+            <div class="credentials">
+                <div><strong>Email:</strong> demo@personality.co</div>
+                <div><strong>Contraseña:</strong> Demo123!</div>
+                <div><strong>Nombre:</strong> Usuario Demo</div>
+            </div>
+        </div>
+        
+        <button class="btn" onclick="setupDemoUser()">
+            🚀 Configurar Usuario Demo
+        </button>
+        
+        <div class="success" id="successMessage">
+            <strong>✅ ¡Usuario configurado exitosamente!</strong><br><br>
+            Puedes acceder al dashboard en:<br>
+            <a href="http://localhost:3000/es/dashboard" class="link" target="_blank">
+                http://localhost:3000/es/dashboard
+            </a>
+        </div>
+        
+        <div class="steps">
+            <h4>📝 Cómo usar:</h4>
+            <ol>
+                <li>Haz clic en "Configurar Usuario Demo"</li>
+                <li>Ve a <a href="http://localhost:3000/es/login" class="link" target="_blank">Login</a></li>
+                <li>Ingresa las credenciales de arriba</li>
+                <li>Accede al dashboard y explora</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        function setupDemoUser() {
+            // Configurar token de autenticación simulado
+            const authToken = 'demo-token-' + Date.now();
+            localStorage.setItem('auth_token', authToken);
+            
+            // Configurar datos del usuario
+            const userData = {
+                email: 'demo@personality.co',
+                userName: 'Usuario Demo',
+                subscriptionStatus: 'active',
+                trialEndDate: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString(),
+                createdAt: new Date().toISOString()
+            };
+            localStorage.setItem('user_data', JSON.stringify(userData));
+            localStorage.setItem('userName', 'Usuario Demo');
+            localStorage.setItem('userEmail', 'demo@personality.co');
+            localStorage.setItem('paymentCompleted', 'true');
+            
+            // Configurar progreso del usuario
+            const userProgress = {
+                completedTests: 5,
+                finishedCourses: 2,
+                completedChallenges: 3
+            };
+            localStorage.setItem('userProgress', JSON.stringify(userProgress));
+            
+            // Configurar racha diaria
+            localStorage.setItem('dailyStreak', '3');
+            
+            // Configurar resultado de personalidad de ejemplo
+            const personalityScores = {
+                openness: 75,
+                conscientiousness: 82,
+                extraversion: 68,
+                agreeableness: 90,
+                neuroticism: 45
+            };
+            localStorage.setItem('personalityScores', JSON.stringify(personalityScores));
+            localStorage.setItem('personalityType', 'CONSCIENTIOUSNESS');
+            
+            // Mostrar mensaje de éxito
+            document.getElementById('successMessage').classList.add('show');
+            
+            // Deshabilitar botón
+            event.target.disabled = true;
+            event.target.textContent = '✅ Usuario Configurado';
+            
+            console.log('✅ Usuario demo configurado exitosamente');
+            console.log('📧 Email: demo@personality.co');
+            console.log('🔑 Password: Demo123!');
+            console.log('🔗 Dashboard: http://localhost:3000/es/dashboard');
+        }
+    </script>
+</body>
+</html>
+
