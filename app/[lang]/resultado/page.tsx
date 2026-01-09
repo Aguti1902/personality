@@ -23,10 +23,10 @@ const generatePDF = async (
   let currentY = 20
 
   // Colores corporativos
-  const primaryColor = [34, 68, 105] // #224469
-  const secondaryColor = [255, 133, 42] // #FF852A
-  const textColor = [31, 41, 55] // gray-900
-  const lightGray = [156, 163, 175] // gray-400
+  const primaryColor = [34, 68, 105] as const // #224469
+  const secondaryColor = [255, 133, 42] as const // #FF852A
+  const textColor = [31, 41, 55] as const // gray-900
+  const lightGray = [156, 163, 175] as const // gray-400
 
   // Cargar el logo y convertirlo a blanco
   let logoData: string | null = null
@@ -157,11 +157,11 @@ const generatePDF = async (
     
     currentY += 10
     const dimensions = [
-      { name: 'Apertura (Openness)', score: personalityScores.openness, color: [59, 130, 246] },
-      { name: 'Responsabilidad (Conscientiousness)', score: personalityScores.conscientiousness, color: [34, 197, 94] },
-      { name: 'Extraversión (Extraversion)', score: personalityScores.extraversion, color: [249, 115, 22] },
-      { name: 'Amabilidad (Agreeableness)', score: personalityScores.agreeableness, color: [168, 85, 247] },
-      { name: 'Neuroticismo (Neuroticism)', score: personalityScores.neuroticism, color: [239, 68, 68] }
+      { name: 'Apertura (Openness)', score: personalityScores.openness, color: [59, 130, 246] as const },
+      { name: 'Responsabilidad (Conscientiousness)', score: personalityScores.conscientiousness, color: [34, 197, 94] as const },
+      { name: 'Extraversión (Extraversion)', score: personalityScores.extraversion, color: [249, 115, 22] as const },
+      { name: 'Amabilidad (Agreeableness)', score: personalityScores.agreeableness, color: [168, 85, 247] as const },
+      { name: 'Neuroticismo (Neuroticism)', score: personalityScores.neuroticism, color: [239, 68, 68] as const }
     ]
 
     dimensions.forEach((dim) => {
@@ -176,7 +176,7 @@ const generatePDF = async (
       const barX = pageWidth - margin - barWidth
       doc.setFillColor(240, 240, 240)
       doc.rect(barX, currentY - 5, barWidth, 6, 'F')
-      doc.setFillColor(...dim.color)
+      doc.setFillColor(dim.color[0], dim.color[1], dim.color[2])
       doc.rect(barX, currentY - 5, (dim.score / 100) * barWidth, 6, 'F')
       
       // Porcentaje
