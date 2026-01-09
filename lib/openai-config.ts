@@ -2,9 +2,17 @@ import OpenAI from 'openai'
 
 // Configuración de OpenAI
 // La API key se carga desde .env.local
-export const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY
-})
+// Inicialización lazy para evitar errores durante el build
+let openaiInstance: OpenAI | null = null
+
+function getOpenAIClient() {
+  if (!openaiInstance) {
+    openaiInstance = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY
+    })
+  }
+  return openaiInstance
+}
 
 export interface PersonalityReportData {
   introduction: string
@@ -110,6 +118,7 @@ El contenido debe ser:
 - En español formal pero accesible
 `
 
+    const openai = getOpenAIClient()
     const response = await openai.chat.completions.create({
       model: 'gpt-4o-mini',
       messages: [
