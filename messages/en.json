@@ -9,7 +9,12 @@
     "profile": "My Profile",
     "myAccount": "My Account",
     "myTests": "My Tests",
-    "logout": "Logout"
+    "logout": "Logout",
+    "about": "About",
+    "pricing": "Pricing",
+    "faq": "FAQs",
+    "contact": "Contact",
+    "signIn": "Sign in"
   },
   "footer": {
     "description": "Discover your personality type with our scientific test and get accurate, personalized results in minutes.",
@@ -22,6 +27,7 @@
     "terms": "Terms and Conditions",
     "privacy": "Privacy Policy",
     "refund": "Refund Policy",
+    "login": "Sign in",
     "allRightsReserved": "All rights reserved"
   },
   "hero": {
@@ -40,7 +46,9 @@
     "certificate": "Certificate",
     "certificateDesc": "Share your results",
     "chartTitle": "Personality Dimensions",
-    "users": "Users"
+    "users": "Users",
+    "termsAgree": "By using this site, you agree with the",
+    "termsLink": "terms & conditions"
   },
   "howItWorks": {
     "title": "How does it work?",
@@ -55,7 +63,7 @@
   "features": {
     "title": "Why Personality Insight?",
     "subtitle": "The most accurate and accessible way to know your true personality",
-    "validated": "Scientifically Validated",
+    "validated": "100% Validated",
     "validatedDesc": "Our test is based on the Big Five (OCEAN) model, validated by decades of psychological research.",
     "users": "+100,000 Users",
     "usersDesc": "Thousands of people trust us to discover their true self every day.",
@@ -66,7 +74,27 @@
     "certificate": "Shareable Certificate",
     "certificateDesc": "Download your personality certificate and share your results on social media.",
     "instant": "Instant Results",
-    "instantDesc": "Don't wait days. Get your complete result immediately after completing payment."
+    "instantDesc": "Don't wait days. Get your complete result immediately after completing payment.",
+    "dailyChallenges": "Daily Challenges",
+    "dailyChallengesDesc": "Personalised daily activities to reinforce and develop your personality traits over time.",
+    "careerMatch": "Career Match",
+    "careerMatchDesc": "Discover which career paths and work environments align best with your personality profile."
+  },
+  "ocean": {
+    "title": "The 5 OCEAN Dimensions",
+    "subtitle": "The Big Five is the most rigorously validated personality model in psychology. It measures five core dimensions that together describe the full spectrum of human personality.",
+    "cta": "Start your free test",
+    "openness": "Openness",
+    "opennessDesc": "Creativity, curiosity and openness to new experiences",
+    "conscientiousness": "Conscientiousness",
+    "conscientiousnessDesc": "Organisation, discipline and goal-directed behaviour",
+    "extraversion": "Extraversion",
+    "extraversionDesc": "Sociability, assertiveness and positive emotions",
+    "agreeableness": "Agreeableness",
+    "agreeablenessDesc": "Empathy, cooperation and trust in others",
+    "neuroticism": "Neuroticism",
+    "neuroticismDesc": "Emotional reactivity and vulnerability to stress",
+    "avg": "avg."
   },
   "testimonials": {
     "title": "What our users say",
@@ -226,7 +254,9 @@
     "personalityInstruction1": "The test consists of 30 personality questions",
     "personalityInstruction2": "There are no right or wrong answers",
     "personalityInstruction3": "Answer honestly about how you really are, not how you'd like to be",
-    "personalityInstruction4": "The test takes approximately 5-10 minutes to complete"
+    "personalityInstruction4": "The test takes approximately 5-10 minutes to complete",
+    "previousQuestion": "Previous question",
+    "preparingTest": "Your test is being prepared..."
   },
   "analyzing": {
     "title": "We're analyzing your personality",

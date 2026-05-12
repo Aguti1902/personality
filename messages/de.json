@@ -9,7 +9,12 @@
     "profile": "Mein Profil",
     "myAccount": "Mein Konto",
     "myTests": "Meine Tests",
-    "logout": "Abmelden"
+    "logout": "Abmelden",
+    "about": "Über uns",
+    "pricing": "Preise",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "signIn": "Anmelden"
   },
   "footer": {
     "description": "Entdecken Sie Ihr Intelligenzniveau mit unserem wissenschaftlichen Test und erhalten Sie präzise, personalisierte Ergebnisse in Minuten.",
@@ -22,6 +27,7 @@
     "terms": "Allgemeine Geschäftsbedingungen",
     "privacy": "Datenschutzrichtlinie",
     "refund": "Rückerstattungsrichtlinie",
+    "login": "Anmelden",
     "allRightsReserved": "Alle Rechte vorbehalten"
   },
   "hero": {
@@ -40,7 +46,9 @@
     "certificate": "Zertifikat",
     "certificateDesc": "Teilen Sie Ihre Ergebnisse",
     "chartTitle": "Persönlichkeitsdimensionen",
-    "users": "Benutzer"
+    "users": "Benutzer",
+    "termsAgree": "Mit der Nutzung dieser Website stimmen Sie den",
+    "termsLink": "Nutzungsbedingungen zu"
   },
   "howItWorks": {
     "title": "Wie funktioniert es?",
@@ -55,7 +63,7 @@
   "features": {
     "title": "Warum Personality Insight?",
     "subtitle": "Die genaueste und zugänglichste Art, Ihren IQ zu kennen",
-    "validated": "Wissenschaftlich Validiert",
+    "validated": "100% Validiert",
     "validatedDesc": "Unser Test basiert auf anerkannten psychometrischen Prinzipien, die von Intelligenzexperten validiert wurden.",
     "users": "+100.000 Benutzer",
     "usersDesc": "Tausende von Menschen vertrauen uns täglich, um ihr intellektuelles Potenzial zu entdecken.",
@@ -66,7 +74,27 @@
     "certificate": "Teilbares Zertifikat",
     "certificateDesc": "Laden Sie Ihr Zertifikat herunter und teilen Sie Ihre Ergebnisse in sozialen Medien oder mit wem Sie wollen.",
     "instant": "Sofortige Ergebnisse",
-    "instantDesc": "Warten Sie nicht tagelang. Erhalten Sie Ihr vollständiges Ergebnis sofort nach Abschluss der Zahlung."
+    "instantDesc": "Warten Sie nicht tagelang. Erhalten Sie Ihr vollständiges Ergebnis sofort nach Abschluss der Zahlung.",
+    "dailyChallenges": "Tägliche Herausforderungen",
+    "dailyChallengesDesc": "Personalisierte tägliche Aktivitäten zur Stärkung Ihrer Persönlichkeitsmerkmale.",
+    "careerMatch": "Karriere-Match",
+    "careerMatchDesc": "Entdecken Sie, welche Karrierewege am besten zu Ihrem Persönlichkeitsprofil passen."
+  },
+  "ocean": {
+    "title": "Die 5 OCEAN-Dimensionen",
+    "subtitle": "Das Big Five ist das am striktesten validierte Persönlichkeitsmodell in der Psychologie. Es misst fünf Kerndimensionen, die zusammen das vollständige Spektrum der menschlichen Persönlichkeit beschreiben.",
+    "cta": "Starten Sie Ihren kostenlosen Test",
+    "openness": "Offenheit",
+    "opennessDesc": "Kreativität, Neugier und Offenheit für neue Erfahrungen",
+    "conscientiousness": "Gewissenhaftigkeit",
+    "conscientiousnessDesc": "Organisation, Disziplin und zielorientiertes Verhalten",
+    "extraversion": "Extraversion",
+    "extraversionDesc": "Geselligkeit, Durchsetzungsvermögen und positive Emotionen",
+    "agreeableness": "Verträglichkeit",
+    "agreeablenessDesc": "Empathie, Kooperation und Vertrauen gegenüber anderen",
+    "neuroticism": "Neurotizismus",
+    "neuroticismDesc": "Emotionale Reaktivität und Anfälligkeit für Stress",
+    "avg": "Ø"
   },
   "testimonials": {
     "title": "Was unsere Benutzer sagen",
@@ -232,7 +260,14 @@
     "instruction2": "Sie haben <strong>20 Minuten</strong> Zeit, um ihn zu absolvieren",
     "instruction3": "Sie können zwischen den Fragen mit den Schaltflächen <strong>Zurück/Weiter</strong> navigieren",
     "instruction4": "Wählen Sie die Option, die das Muster am besten vervollständigt",
-    "instruction5": "Nehmen Sie sich Zeit und überlegen Sie jede Antwort gut"
+    "instruction5": "Nehmen Sie sich Zeit und überlegen Sie jede Antwort gut",
+    "previousQuestion": "Vorherige Frage",
+    "congratulations": "Glückwunsch",
+    "testCompleted": "Sie haben den Persönlichkeitstest abgeschlossen.",
+    "editAnswers": "Meine Antworten bearbeiten",
+    "personalityInstruction1": "Der Test besteht aus 30 Fragen zur Persönlichkeit",
+    "personalityInstruction2": "Es gibt keine richtigen oder falschen Antworten",
+    "preparingTest": "Ihr Test wird vorbereitet..."
   },
   "analyzing": {
     "title": "Die Auswertung Ihres Tests läuft",

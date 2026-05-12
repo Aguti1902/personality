@@ -9,7 +9,12 @@
     "profile": "Min Profil",
     "myAccount": "Min Konto",
     "myTests": "Mine Tester",
-    "logout": "Logg ut"
+    "logout": "Logg ut",
+    "about": "Om oss",
+    "pricing": "Priser",
+    "faq": "Spørsmål",
+    "contact": "Kontakt",
+    "signIn": "Logg inn"
   },
   "footer": {
     "description": "Oppdag ditt intelligensnivå med vår vitenskapelige test og få nøyaktige, personlige resultater på minutter.",
@@ -22,6 +27,7 @@
     "terms": "Vilkår og Betingelser",
     "privacy": "Personvernregler",
     "refund": "Refusjonsregler",
+    "login": "Logg inn",
     "allRightsReserved": "Alle rettigheter reservert"
   },
   "hero": {
@@ -40,7 +46,9 @@
     "certificate": "Sertifikat",
     "certificateDesc": "Del dine resultater",
     "chartTitle": "Personlighetsdimensjoner",
-    "users": "Brukere"
+    "users": "Brukere",
+    "termsAgree": "Ved å bruke dette nettstedet godtar du",
+    "termsLink": "vilkårene"
   },
   "howItWorks": {
     "title": "Hvordan fungerer det?",
@@ -55,7 +63,7 @@
   "features": {
     "title": "Hvorfor Personality Insight?",
     "subtitle": "Den mest nøyaktige og tilgjengelige måten å kjenne din IQ",
-    "validated": "Vitenskapelig Validert",
+    "validated": "100% Validert",
     "validatedDesc": "Vår test er basert på anerkjente psykometriske prinsipper og validert av intelligenseksperter.",
     "users": "+100 000 Brukere",
     "usersDesc": "Tusenvis av mennesker stoler på oss for å oppdage sitt intellektuelle potensial hver dag.",
@@ -66,7 +74,27 @@
     "certificate": "Delbart Sertifikat",
     "certificateDesc": "Last ned sertifikatet ditt og del dine resultater på sosiale medier eller med hvem du vil.",
     "instant": "Umiddelbare Resultater",
-    "instantDesc": "Ikke vent i dager. Få ditt komplette resultat umiddelbart etter å ha fullført betalingen."
+    "instantDesc": "Ikke vent i dager. Få ditt komplette resultat umiddelbart etter å ha fullført betalingen.",
+    "dailyChallenges": "Daglige Utfordringer",
+    "dailyChallengesDesc": "Personlige daglige aktiviteter for å styrke dine personlighetstrekk.",
+    "careerMatch": "Karriere-Match",
+    "careerMatchDesc": "Oppdag hvilke karriereveier som passer best med din personlighetsprofil."
+  },
+  "ocean": {
+    "title": "De 5 OCEAN-dimensjonene",
+    "subtitle": "Big Five er den mest vitenskapelig validerte personlighetsmodellen i psykologien. Den måler fem kjernedimensjoner som sammen beskriver det fulle spekteret av menneskelig personlighet.",
+    "cta": "Start din gratis test",
+    "openness": "Åpenhet",
+    "opennessDesc": "Kreativitet, nysgjerrighet og åpenhet for nye opplevelser",
+    "conscientiousness": "Planmessighet",
+    "conscientiousnessDesc": "Organisering, disiplin og målorientert atferd",
+    "extraversion": "Ekstroversjon",
+    "extraversionDesc": "Omgjengelighet, selvhevdelse og positive følelser",
+    "agreeableness": "Medmenneskelighet",
+    "agreeablenessDesc": "Empati, samarbeid og tillit til andre",
+    "neuroticism": "Nevrotisisme",
+    "neuroticismDesc": "Emosjonell reaktivitet og sårbarhet for stress",
+    "avg": "snitt"
   },
   "testimonials": {
     "title": "Hva våre brukere sier",
@@ -226,7 +254,20 @@
     "instruction2": "Du har <strong>20 minutter</strong> til å fullføre den",
     "instruction3": "Du kan navigere mellom spørsmål ved hjelp av knappene <strong>Forrige/Neste</strong>",
     "instruction4": "Velg alternativet som best fullfører mønsteret",
-    "instruction5": "Ta deg tid og tenk nøye gjennom hvert svar"
+    "instruction5": "Ta deg tid og tenk nøye gjennom hvert svar",
+    "likertQuestion": "Velg hvor godt hvert utsagn beskriver deg.",
+    "stronglyDisagree": "Svært uenig",
+    "disagree": "Uenig",
+    "neutral": "Nøytral",
+    "agree": "Enig",
+    "stronglyAgree": "Svært enig",
+    "previousQuestion": "Forrige spørsmål",
+    "congratulations": "Gratulerer",
+    "testCompleted": "Du har fullført personlighetstesten.",
+    "editAnswers": "Rediger svarene mine",
+    "personalityInstruction1": "Testen består av 30 personlighetsspørsmål",
+    "personalityInstruction2": "Det finnes ingen rette eller gale svar",
+    "preparingTest": "Testen din forberedes..."
   },
   "analyzing": {
     "title": "Evalueringen av testen din pågår",

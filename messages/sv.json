@@ -9,7 +9,12 @@
     "profile": "Min Profil",
     "myAccount": "Mitt Konto",
     "myTests": "Mina Test",
-    "logout": "Logga ut"
+    "logout": "Logga ut",
+    "about": "Om oss",
+    "pricing": "Priser",
+    "faq": "Vanliga frågor",
+    "contact": "Kontakt",
+    "signIn": "Logga in"
   },
   "footer": {
     "description": "Upptäck din intelligensnivå med vårt vetenskapliga test och få exakta, personliga resultat på några minuter.",
@@ -22,6 +27,7 @@
     "terms": "Villkor",
     "privacy": "Integritetspolicy",
     "refund": "Återbetalningspolicy",
+    "login": "Logga in",
     "allRightsReserved": "Alla rättigheter förbehållna"
   },
   "hero": {
@@ -40,7 +46,9 @@
     "certificate": "Certifikat",
     "certificateDesc": "Dela dina resultat",
     "chartTitle": "Personlighetsdimensioner",
-    "users": "Användare"
+    "users": "Användare",
+    "termsAgree": "Genom att använda denna webbplats godkänner du",
+    "termsLink": "villkoren"
   },
   "howItWorks": {
     "title": "Hur fungerar det?",
@@ -55,7 +63,7 @@
   "features": {
     "title": "Varför Personality Insight?",
     "subtitle": "Det mest exakta och tillgängliga sättet att känna till ditt IQ",
-    "validated": "Vetenskapligt Validerat",
+    "validated": "100% Validerat",
     "validatedDesc": "Vårt test är baserat på erkända psykometriska principer och validerat av intelligensexperter.",
     "users": "+100 000 Användare",
     "usersDesc": "Tusentals människor litar på oss för att upptäcka sin intellektuella potential varje dag.",
@@ -66,7 +74,27 @@
     "certificate": "Delbart Certifikat",
     "certificateDesc": "Ladda ner ditt certifikat och dela dina resultat på sociala medier eller med vem du vill.",
     "instant": "Omedelbara Resultat",
-    "instantDesc": "Vänta inte i dagar. Få ditt kompletta resultat omedelbart efter att du slutfört betalningen."
+    "instantDesc": "Vänta inte i dagar. Få ditt kompletta resultat omedelbart efter att du slutfört betalningen.",
+    "dailyChallenges": "Dagliga Utmaningar",
+    "dailyChallengesDesc": "Personliga dagliga aktiviteter för att stärka dina personlighetsdrag.",
+    "careerMatch": "Karriärmatch",
+    "careerMatchDesc": "Upptäck vilka karriärvägar som passar bäst med din personlighetsprofil."
+  },
+  "ocean": {
+    "title": "De 5 OCEAN-dimensionerna",
+    "subtitle": "Big Five är den mest rigoröst validerade personlighetsmodellen inom psykologin. Den mäter fem kärndimensioner som tillsammans beskriver hela spektrumet av mänsklig personlighet.",
+    "cta": "Starta ditt gratis test",
+    "openness": "Öppenhet",
+    "opennessDesc": "Kreativitet, nyfikenhet och öppenhet för nya upplevelser",
+    "conscientiousness": "Samvetsgrannhet",
+    "conscientiousnessDesc": "Organisation, disciplin och målinriktat beteende",
+    "extraversion": "Extraversion",
+    "extraversionDesc": "Sällskaplighet, självhävdelse och positiva känslor",
+    "agreeableness": "Tillmötesgående",
+    "agreeablenessDesc": "Empati, samarbete och tillit till andra",
+    "neuroticism": "Neuroticism",
+    "neuroticismDesc": "Emotionell reaktivitet och känslighet för stress",
+    "avg": "snitt"
   },
   "testimonials": {
     "title": "Vad våra användare säger",
@@ -226,7 +254,20 @@
     "instruction2": "Du har <strong>20 minuter</strong> på dig att slutföra det",
     "instruction3": "Du kan navigera mellan frågor med knapparna <strong>Föregående/Nästa</strong>",
     "instruction4": "Välj det alternativ som bäst kompletterar mönstret",
-    "instruction5": "Ta din tid och tänk noga igenom varje svar"
+    "instruction5": "Ta din tid och tänk noga igenom varje svar",
+    "likertQuestion": "Välj hur väl varje påstående beskriver dig.",
+    "stronglyDisagree": "Håller helt inte med",
+    "disagree": "Håller inte med",
+    "neutral": "Neutral",
+    "agree": "Håller med",
+    "stronglyAgree": "Håller helt med",
+    "previousQuestion": "Föregående fråga",
+    "congratulations": "Grattis",
+    "testCompleted": "Du har slutfört personlighetstestet.",
+    "editAnswers": "Redigera mina svar",
+    "personalityInstruction1": "Testet består av 30 personlighetsfrågor",
+    "personalityInstruction2": "Det finns inga rätt eller fel svar",
+    "preparingTest": "Ditt test förbereds..."
   },
   "analyzing": {
     "title": "Utvärderingen av ditt test pågår",

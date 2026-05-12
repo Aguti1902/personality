@@ -9,7 +9,12 @@
     "profile": "Il Mio Profilo",
     "myAccount": "Il Mio Account",
     "myTests": "I Miei Test",
-    "logout": "Disconnetti"
+    "logout": "Disconnetti",
+    "about": "Chi siamo",
+    "pricing": "Prezzi",
+    "faq": "FAQ",
+    "contact": "Contatto",
+    "signIn": "Accedi"
   },
   "footer": {
     "description": "Scopri il tuo livello di intelligenza con il nostro test scientifico e ottieni risultati precisi e personalizzati in pochi minuti.",
@@ -22,6 +27,7 @@
     "terms": "Termini e Condizioni",
     "privacy": "Politica sulla Privacy",
     "refund": "Politica di Rimborso",
+    "login": "Accedi",
     "allRightsReserved": "Tutti i diritti riservati"
   },
   "hero": {
@@ -40,7 +46,9 @@
     "certificate": "Certificato",
     "certificateDesc": "Condividi i tuoi risultati",
     "chartTitle": "Dimensioni della Personalità",
-    "users": "Utenti"
+    "users": "Utenti",
+    "termsAgree": "Utilizzando questo sito, accetti i",
+    "termsLink": "termini e condizioni"
   },
   "howItWorks": {
     "title": "Come funziona?",
@@ -55,7 +63,7 @@
   "features": {
     "title": "Perché Personality Insight?",
     "subtitle": "Il modo più preciso e accessibile per conoscere il tuo QI",
-    "validated": "Scientificamente Validato",
+    "validated": "Validato al 100%",
     "validatedDesc": "Il nostro test si basa su principi psicometrici riconosciuti e validati da esperti di intelligenza.",
     "users": "+100.000 Utenti",
     "usersDesc": "Migliaia di persone si fidano di noi per scoprire il loro potenziale intellettuale ogni giorno.",
@@ -66,7 +74,27 @@
     "certificate": "Certificato Condivisibile",
     "certificateDesc": "Scarica il tuo certificato e condividi i tuoi risultati sui social media o con chi vuoi.",
     "instant": "Risultati Immediati",
-    "instantDesc": "Non aspettare giorni. Ottieni il tuo risultato completo immediatamente dopo aver completato il pagamento."
+    "instantDesc": "Non aspettare giorni. Ottieni il tuo risultato completo immediatamente dopo aver completato il pagamento.",
+    "dailyChallenges": "Sfide Quotidiane",
+    "dailyChallengesDesc": "Attività quotidiane personalizzate per rafforzare i tuoi tratti di personalità.",
+    "careerMatch": "Carriera Ideale",
+    "careerMatchDesc": "Scopri quali percorsi di carriera si allineano meglio al tuo profilo di personalità."
+  },
+  "ocean": {
+    "title": "Le 5 Dimensioni OCEAN",
+    "subtitle": "Il Big Five è il modello di personalità più validato scientificamente in psicologia. Misura cinque dimensioni fondamentali che insieme descrivono lo spettro completo della personalità umana.",
+    "cta": "Inizia il tuo test gratuito",
+    "openness": "Apertura",
+    "opennessDesc": "Creatività, curiosità e apertura a nuove esperienze",
+    "conscientiousness": "Coscienziosità",
+    "conscientiousnessDesc": "Organizzazione, disciplina e comportamento orientato agli obiettivi",
+    "extraversion": "Estroversione",
+    "extraversionDesc": "Socievolezza, assertività ed emozioni positive",
+    "agreeableness": "Gradevolezza",
+    "agreeablenessDesc": "Empatia, cooperazione e fiducia negli altri",
+    "neuroticism": "Nevroticismo",
+    "neuroticismDesc": "Reattività emotiva e vulnerabilità allo stress",
+    "avg": "media"
   },
   "testimonials": {
     "title": "Cosa dicono i nostri utenti",
@@ -226,7 +254,20 @@
     "instruction2": "Hai <strong>20 minuti</strong> per completarlo",
     "instruction3": "Puoi navigare tra le domande usando i pulsanti <strong>Precedente/Successivo</strong>",
     "instruction4": "Scegli l'opzione che completa meglio il modello",
-    "instruction5": "Prenditi il tuo tempo e pensa bene a ogni risposta"
+    "instruction5": "Prenditi il tuo tempo e pensa bene a ogni risposta",
+    "likertQuestion": "Scegli quanto ogni affermazione ti rispecchia.",
+    "stronglyDisagree": "Fortemente in disaccordo",
+    "disagree": "In disaccordo",
+    "neutral": "Neutrale",
+    "agree": "D'accordo",
+    "stronglyAgree": "Fortemente d'accordo",
+    "previousQuestion": "Domanda precedente",
+    "congratulations": "Congratulazioni",
+    "testCompleted": "Hai completato il test della personalità.",
+    "editAnswers": "Modifica le mie risposte",
+    "personalityInstruction1": "Il test è composto da 30 domande sulla personalità",
+    "personalityInstruction2": "Non ci sono risposte giuste o sbagliate",
+    "preparingTest": "Il tuo test è in fase di preparazione..."
   },
   "analyzing": {
     "title": "La valutazione del tuo test è in corso",

@@ -9,7 +9,12 @@
     "profile": "Mi Perfil",
     "myAccount": "Mi Cuenta",
     "myTests": "Mis Tests",
-    "logout": "Cerrar Sesión"
+    "logout": "Cerrar Sesión",
+    "about": "Sobre nosotros",
+    "pricing": "Precios",
+    "faq": "FAQ",
+    "contact": "Contacto",
+    "signIn": "Iniciar Sesión"
   },
   "footer": {
     "description": "Descubre tu tipo de personalidad con nuestro test científico y obtén resultados precisos y personalizados en minutos.",
@@ -41,7 +46,9 @@
     "certificate": "Certificado",
     "certificateDesc": "Comparte tus resultados",
     "chartTitle": "Dimensiones de Personalidad",
-    "users": "Usuarios"
+    "users": "Usuarios",
+    "termsAgree": "Al usar este sitio, aceptas los",
+    "termsLink": "términos y condiciones"
   },
   "howItWorks": {
     "title": "¿Cómo funciona?",
@@ -56,7 +63,7 @@
   "features": {
     "title": "¿Por qué Personality Insight?",
     "subtitle": "La forma más precisa y accesible de conocer tu verdadera personalidad",
-    "validated": "Científicamente Validado",
+    "validated": "Validado 100%",
     "validatedDesc": "Nuestro test está basado en el modelo Big Five (OCEAN), validado por décadas de investigación en psicología.",
     "users": "+100,000 Usuarios",
     "usersDesc": "Miles de personas confían en nosotros para descubrir su verdadero yo cada día.",
@@ -67,7 +74,27 @@
     "certificate": "Certificado Compartible",
     "certificateDesc": "Descarga tu certificado de personalidad y comparte tus resultados en redes sociales.",
     "instant": "Resultados Inmediatos",
-    "instantDesc": "No esperes días. Obtén tu resultado completo inmediatamente después de completar el pago."
+    "instantDesc": "No esperes días. Obtén tu resultado completo inmediatamente después de completar el pago.",
+    "dailyChallenges": "Desafíos Diarios",
+    "dailyChallengesDesc": "Actividades diarias personalizadas para reforzar y desarrollar tus rasgos de personalidad.",
+    "careerMatch": "Carrera Ideal",
+    "careerMatchDesc": "Descubre qué caminos profesionales se alinean mejor con tu perfil de personalidad."
+  },
+  "ocean": {
+    "title": "Las 5 Dimensiones OCEAN",
+    "subtitle": "El Big Five es el modelo de personalidad más validado científicamente en psicología. Mide cinco dimensiones fundamentales que juntas describen el espectro completo de la personalidad humana.",
+    "cta": "Empieza tu test gratis",
+    "openness": "Apertura",
+    "opennessDesc": "Creatividad, curiosidad y apertura a nuevas experiencias",
+    "conscientiousness": "Responsabilidad",
+    "conscientiousnessDesc": "Organización, disciplina y comportamiento orientado a metas",
+    "extraversion": "Extraversión",
+    "extraversionDesc": "Sociabilidad, asertividad y emociones positivas",
+    "agreeableness": "Amabilidad",
+    "agreeablenessDesc": "Empatía, cooperación y confianza en los demás",
+    "neuroticism": "Neuroticismo",
+    "neuroticismDesc": "Reactividad emocional y vulnerabilidad al estrés",
+    "avg": "media"
   },
   "testimonials": {
     "title": "Lo que dicen nuestros usuarios",
@@ -227,7 +254,9 @@
     "personalityInstruction1": "El test consta de 30 preguntas sobre tu personalidad",
     "personalityInstruction2": "No hay respuestas correctas o incorrectas",
     "personalityInstruction3": "Responde con honestidad sobre cómo realmente eres, no cómo te gustaría ser",
-    "personalityInstruction4": "El test tarda aproximadamente 5-10 minutos en completarse"
+    "personalityInstruction4": "El test tarda aproximadamente 5-10 minutos en completarse",
+    "previousQuestion": "Pregunta anterior",
+    "preparingTest": "Tu test se está preparando..."
   },
   "analyzing": {
     "title": "Estamos analizando tu personalidad",

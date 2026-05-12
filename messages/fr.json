@@ -9,7 +9,12 @@
     "profile": "Mon Profil",
     "myAccount": "Mon Compte",
     "myTests": "Mes Tests",
-    "logout": "Déconnexion"
+    "logout": "Déconnexion",
+    "about": "À propos",
+    "pricing": "Tarifs",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "signIn": "Se connecter"
   },
   "footer": {
     "description": "Découvrez votre type de personnalité avec notre test scientifique et obtenez des résultats précis et personnalisés en quelques minutes.",
@@ -22,6 +27,7 @@
     "terms": "Conditions Générales",
     "privacy": "Politique de Confidentialité",
     "refund": "Politique de Remboursement",
+    "login": "Se connecter",
     "allRightsReserved": "Tous droits réservés"
   },
   "hero": {
@@ -40,7 +46,9 @@
     "certificate": "Certificat",
     "certificateDesc": "Partagez vos résultats",
     "chartTitle": "Dimensions de Personnalité",
-    "users": "Utilisateurs"
+    "users": "Utilisateurs",
+    "termsAgree": "En utilisant ce site, vous acceptez les",
+    "termsLink": "termes et conditions"
   },
   "howItWorks": {
     "title": "Comment ça marche ?",
@@ -55,7 +63,7 @@
   "features": {
     "title": "Pourquoi Personality Insight ?",
     "subtitle": "La façon la plus précise et accessible de connaître votre vraie personnalité",
-    "validated": "Scientifiquement Validé",
+    "validated": "Validé à 100%",
     "validatedDesc": "Notre test est basé sur le modèle Big Five (OCEAN), validé par des décennies de recherche en psychologie.",
     "users": "+100 000 Utilisateurs",
     "usersDesc": "Des milliers de personnes nous font confiance pour découvrir leur vrai moi chaque jour.",
@@ -66,7 +74,27 @@
     "certificate": "Certificat Partageable",
     "certificateDesc": "Téléchargez votre certificat de personnalité et partagez vos résultats sur les réseaux sociaux.",
     "instant": "Résultats Immédiats",
-    "instantDesc": "N'attendez pas des jours. Obtenez votre résultat complet immédiatement après avoir effectué le paiement."
+    "instantDesc": "N'attendez pas des jours. Obtenez votre résultat complet immédiatement après avoir effectué le paiement.",
+    "dailyChallenges": "Défis Quotidiens",
+    "dailyChallengesDesc": "Activités quotidiennes personnalisées pour renforcer vos traits de personnalité.",
+    "careerMatch": "Carrière Idéale",
+    "careerMatchDesc": "Découvrez quels parcours professionnels s'alignent le mieux avec votre profil de personnalité."
+  },
+  "ocean": {
+    "title": "Les 5 Dimensions OCEAN",
+    "subtitle": "Le Big Five est le modèle de personnalité le plus validé scientifiquement en psychologie. Il mesure cinq dimensions fondamentales qui décrivent ensemble le spectre complet de la personnalité humaine.",
+    "cta": "Commencer votre test gratuit",
+    "openness": "Ouverture",
+    "opennessDesc": "Créativité, curiosité et ouverture aux nouvelles expériences",
+    "conscientiousness": "Conscience",
+    "conscientiousnessDesc": "Organisation, discipline et comportement orienté vers les objectifs",
+    "extraversion": "Extraversion",
+    "extraversionDesc": "Sociabilité, assertivité et émotions positives",
+    "agreeableness": "Agréabilité",
+    "agreeablenessDesc": "Empathie, coopération et confiance envers les autres",
+    "neuroticism": "Névrosisme",
+    "neuroticismDesc": "Réactivité émotionnelle et vulnérabilité au stress",
+    "avg": "moy."
   },
   "testimonials": {
     "title": "Ce que disent nos utilisateurs",
@@ -227,12 +255,13 @@
     "personalityInstruction2": "Il n'y a pas de bonnes ou mauvaises réponses",
     "personalityInstruction3": "Répondez honnêtement sur comment vous êtes vraiment, pas comment vous aimeriez être",
     "personalityInstruction4": "Le test prend environ 5-10 minutes",
-    "instructionsTitle": "ℹ️ Instructions:",
     "instruction1": "Le test se compose de <strong>20 questions visuelles</strong>",
     "instruction2": "Vous avez <strong>20 minutes</strong> pour le compléter",
     "instruction3": "Vous pouvez naviguer entre les questions en utilisant les boutons <strong>Précédent/Suivant</strong>",
     "instruction4": "Choisissez l'option qui complète le mieux le motif",
-    "instruction5": "Prenez votre temps et réfléchissez bien à chaque réponse"
+    "instruction5": "Prenez votre temps et réfléchissez bien à chaque réponse",
+    "previousQuestion": "Question précédente",
+    "preparingTest": "Votre test est en cours de préparation..."
   },
   "analyzing": {
     "title": "L'évaluation de votre test est en cours",
